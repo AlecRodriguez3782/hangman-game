@@ -51,7 +51,10 @@ gameOver puzzle  =
 And the easy to follow logic behind this implementation is, that
 
 > totalGuesses = incorrectGuesses + correctGuesses 
-> therefore, 
+> 
+> therefore 
+> 
 > incorrectGuesses = totalGuesses - correctGuesses. 
+
 
 Knowing this, you just define how to get the implementation for these variables and you can add this functionality to the program. 
