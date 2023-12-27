@@ -38,8 +38,8 @@ randomWord wl = do
 
 randomWordFromGameWords :: IO String
 randomWordFromGameWords  = do
-    words <- gameWords
-    randomWord words   
+    words' <- gameWords
+    randomWord words'
 
 data Puzzle = 
     Puzzle { 
@@ -73,8 +73,8 @@ fillInCharacter b puzzle c =
             puzzle {allGuesses = c : (allGuesses puzzle)}
         where
             f :: Char -> Char -> Maybe Char -> Maybe Char
-            f c hiddenC maybec 
-                | c == hiddenC   = Just c
+            f c' hiddenC maybec 
+                | c' == hiddenC   = Just c'
                 | otherwise      = maybec
 
 handleGuess :: Puzzle -> Char -> IO Puzzle 
