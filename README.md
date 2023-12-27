@@ -58,5 +58,7 @@ And the easy to follow logic behind this implementation is, that
 
 
 Knowing this, you just define how to get the implementation for these variables and you can add this functionality to the program. 
+
+**Program running on the command line displaying new functionality**
 ![Screenshot 2023-12-27 1 41 08 PM](https://github.com/AlecRodriguez3782/hangman-game/assets/154834510/6475d7cf-36e8-4980-b2f0-c3c99ad438e2)
 
